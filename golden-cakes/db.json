@@ -15,6 +15,14 @@
       "price": 2499,
       "description": "Soft vanilla cake",
       "image": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e"
+    },
+    {
+      "name": "Strawberry Short Cake",
+      "flavor": "Strawberry",
+      "price": "1499",
+      "description": "A classic dessert made of a sweet, crumbly base, layered with macerated, juicy strawberries, and topped with whipped cream",
+      "image": "https://static01.nyt.com/images/2025/05/20/multimedia/strawberry-shortcake-lwkb/strawberry-shortcake-lwkb-threeByTwoMediumAt2X.jpg?quality=75&auto=webp",
+      "id": "iBImsJ7lxkE"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { addCake } from "../services/api"
 import { useNavigate } from "react-router-dom"
+import CakeForm from "../components/CakeForm"
 
 function AddCake() {
   const navigate = useNavigate()
@@ -29,24 +30,12 @@ function AddCake() {
   }
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="p-6 flex flex-col gap-4 max-w-md mx-auto"
-    >
-      <input name="name" placeholder="Cake Name" onChange={handleChange} className="border p-2" />
-
-      <input name="flavor" placeholder="Flavor" onChange={handleChange} className="border p-2" />
-
-      <input name="price" placeholder="Price" onChange={handleChange} className="border p-2" />
-
-      <input name="image" placeholder="Image URL" onChange={handleChange} className="border p-2" />
-
-      <textarea name="description" placeholder="Description" onChange={handleChange} className="border p-2" />
-
-      <button className="bg-[#d4af37] text-black p-2 rounded">
-        Add Cake
-      </button>
-    </form>
+    <CakeForm
+      formData={formData}
+      handleChange={handleChange}
+      handleSubmit={handleSubmit}
+      buttonText="Add Cake"
+    />
   )
 }
 
